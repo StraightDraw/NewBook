@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.1 Conda &#8212; New Jupyter-Book Template</title>
+    <title>1.1 Conda &#8212; Intro to Applied Statistics</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -25,8 +25,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,13 +34,12 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -78,7 +77,7 @@
   <img src="../_static/UNG.logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">New Jupyter-Book Template</h1>
+  <h1 class="site-logo" id="site-title">Intro to Applied Statistics</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -89,7 +88,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Introduction.html">
-   Template for New JupyterBook
+   JupyterBooks for Math Geeks
   </a>
  </li>
 </ul>
@@ -271,40 +270,40 @@
 <div class="section" id="download-anaconda-use-navigator">
 <h2>Download Anaconda. Use Navigator<a class="headerlink" href="#download-anaconda-use-navigator" title="Permalink to this headline">¶</a></h2>
 <p>Go to <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda.com</a> and dowload the free individual package of Anaconda. Once it’s installed, find <strong>Anaconda Navigator</strong>. Don’t just open it, put the icon in your start menu. You’ll neeed it often.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Always open Anaconda using the “Run as administrator” option  (right click, then “more” menu). You don’t need administrator level access for most things, but it’s annoying to have correct commands fail for no apparent reason.</p>
-</div>
-<p>Conda is an environment manager which can handle multiple complex coding environments. We don’t need that. We just want one simple coding environment. We’ll create a new environment and keep things simple.</p>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<p>To create the hint, we just use the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{hint}
-</pre></div>
-</div>
-</div>
+<p>Conda is an environment manager which can handle multiple complex coding environments. We don’t need that. We just want one simple coding environment. Let’s create it and keep things simple.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Don’t make any changes to the base(root) environment. That’s the control center.</p>
 </div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>To create the hint, we just use the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+````{hint}
+
+</pre></div>
+</div>
+<p>Then type in the hint, and close with 4 more ticks.</p>
+</div>
 <div class="section" id="python-environment">
 <h3>Python Environment<a class="headerlink" href="#python-environment" title="Permalink to this headline">¶</a></h3>
-<p>I suggest you begin with a Python environment, just to get started. My entire Geometry Juypyterbook was built in a plain vanilla Python envrionment. Why not get everything working properly in less than an hour, then work on other environments and engines? Wish I had.</p>
+<p>I suggest you begin with a Python environment, just to get started. My entire Geometry Juypyterbook was built in markdown only (no engine). Why not get everything working properly in less than an hour, then work on other environments and engines? Wish I had.</p>
 <p>To create your new environment, click the “Environments” tab on the left menu bar, then create as shown below.</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Check out this <a class="reference external" href="https://wiki.math.ntnu.no/_media/anaconda">wiki</a> for pretty good instructions about installing and setting up Anaconda.</p>
 </div>
 <p><img alt="Conda Navigator Illustrion" src="https://wiki.math.ntnu.no/_media/anaconda/navigator-create-environment.png?w=550&amp;tok=9ef301" /></p>
-<p>In the pop-up, select the most recent stable version of Python which, as of January, 2021, is Python 3.8. That’s your engine. If you want to use R, MATLAB or SciLab as your engine I’ll try to help with that later. The install will take a minute or two. When it’s ready, click back to “Home” from the top-left menu and use the drop-down to make sure you are in the new environment.</p>
+<p>If you’re creating markdown only Jupyter-books, then select the default Python engine which, as of January, 2021, is version 3.8. That’s your engine. If you want to use R, MATLAB or SciLab as your engine I’ll try to help with that later. The install will take a minute or two. When it’s ready, click back to “Home” from the top-left menu and use the drop-down to make sure you are in the new environment.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You must click “Install” below CMD.exe Prompt and JupyterLab. This activates them so they can be launched.</p>
+</div>
 <p>You’ll have the option to install several packages, all of which have their uses. For JupyterBooks, we only need to install JupyterLabs and the CMD.exe Prompt.</p>
 </div>
 <div class="section" id="installing-packages">
 <h3>Installing packages<a class="headerlink" href="#installing-packages" title="Permalink to this headline">¶</a></h3>
 <p>We need to get the <strong>JupyterBooks</strong> and <strong>github</strong> packages installed, and the Python installer program <strong>pip</strong> helps with that. Open the CMD.exe Prompt and execute these commands:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">pip</span>
-</pre></div>
-</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">git</span>
 </pre></div>
 </div>
@@ -314,7 +313,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
 </pre></div>
 </div>
-<p>Now we have all the tools we need to throw this JupyterBooks touchdown.</p>
+<p>Install <code class="docutils literal notranslate"><span class="pre">git</span></code> in the base environment so that it’s commands will be available in all your environments. For the <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> and <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> packages, they <strong>must</strong> be installed in the environment where you’re planning to build out the JupyterBook. If you have multiple environments to create multiple books, you have to install them for each one.</p>
 </div>
 </div>
 </div>
@@ -355,9 +354,9 @@
     <div class="container">
       <p>
         
-          By Nigel Nighthawk<br/>
+          By Robb Sinn<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
@@ -368,7 +367,7 @@
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
