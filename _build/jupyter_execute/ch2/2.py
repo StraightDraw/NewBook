@@ -32,6 +32,13 @@ If you type `dir` and Enter, you'll see the directory includes a file called `se
 python setup.py install
 ```
 
+````{margin}
+```{warning}
+My machine would not run the `setup.py` install without being in adminstrator mode. If you get weird errors here, try exiting conda, relaunching using administrator mode.
+```
+````
+
+
 The final step is to create the MATLAB kernel for the environment.
 
 ```
@@ -42,4 +49,3 @@ Now, when you open a new JupyterLab file, you will have the option to run either
 ## Installing the SciLab Engine
 
 This page is still under construction.
-
