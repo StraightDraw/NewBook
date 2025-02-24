@@ -7,4 +7,7 @@ parts:
   - caption: Content
     chapters:
     - file: spec
+    - file: hypdef
+    - file: card
+    - file: iframe
 
